@@ -1,11 +1,22 @@
 angular.module("ClearBladeApp")
 .service('cb', ['$q', function ($q) {
-
+	
+	/**
+	 * ClearBlade Service
+	 * @alias ClearBlade
+	 */
 	var cbObj = new ClearBlade();
 
+	/**
+	 * Initialize ClearBlade Service
+	 *
+	 * @param {string} email - ClearBlade System's User Email
+	 * @param {string} password - ClearBlade System's User's Password
+	 * @memberof ClearBlade
+	 */
 	var init = function (email, password) {
 		var deferred = $q.defer();
-
+		// TODO Parameterize key, secret, URI
 		var initOptions = {
 			systemKey: "eeccc5eb0af8d5e6b5a4c094a474",
 			systemSecret: "EECCC5EB0A90EBC6E09CEE95E65D",
@@ -36,6 +47,7 @@ angular.module("ClearBladeApp")
 	 * @param {string} funcName - Code Service Name to run
 	 * @param {Object} params - params object to be ingested by Code Service
 	 * @param {number} retryCounter - number of times to retry executing a code service
+	 * @memberof ClearBlade
 	 */
 	var runCode = function (funcName, params, retryCounter) {
 		var deferred = $q.defer();
