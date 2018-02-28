@@ -1,5 +1,5 @@
 {
-  "name": "Angular-SDK",
+  "name": "angularjs-integration",
   "private": true,
   "version": "0.1.0",
   "description": "Angular SDK",
@@ -33,4 +33,28 @@
 
     "update-index-async": "node -e \"require('shelljs/global'); sed('-i', /\\/\\/@@NG_LOADER_START@@[\\s\\S]*\\/\\/@@NG_LOADER_END@@/, '//@@NG_LOADER_START@@\\n' + sed(/sourceMappingURL=angular-loader.min.js.map/,'sourceMappingURL=bower_components/angular-loader/angular-loader.min.js.map','app/bower_components/angular-loader/angular-loader.min.js') + '\\n//@@NG_LOADER_END@@', 'app/index-async.html');\""
   }
+  "asset_types":[
+		"Code Libraries",
+		"Code Services"
+	],
+	"version":"1.0.0",
+	"homepage":"https://github.com/ClearBlade/Angular-SDK",
+	"license": "MIT",
+	"keywords":[ 
+		"angular",
+    "angularJS",
+    "web",
+    "app",
+    "spa"
+	],
+	"programming_lang":"javascript",
+	"cloud":[],
+	"things":[],
+	"domains": [],
+	"protocols":[],
+	"gateways":[],
+	"image_url":"https://i.imgur.com/qFEC03m.png",
+	"description":"Service for AngularJS",
+	"author":{"email":"rob@clearblade.com",
+	"private":false
 }
