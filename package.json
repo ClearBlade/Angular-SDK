@@ -55,6 +55,8 @@
 	"gateways":[],
 	"image_url":"https://i.imgur.com/qFEC03m.png",
 	"description":"Service for AngularJS",
-	"author":{"email":"rob@clearblade.com",
-	"private":false
+	"author":{
+		"email":"rob@clearblade.com",
+		"private":false
+	}
 }
